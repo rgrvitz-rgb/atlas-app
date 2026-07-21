@@ -1,0 +1,26 @@
+{
+  "name": "Atlas — Personal Intelligence OS",
+  "short_name": "Atlas",
+  "description": "Your whole life — tasks, school, money, habits, people, and memory — in one connected place.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#15171b",
+  "theme_color": "#15171b",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Today", "short_name": "Today", "url": "./index.html#/mission" },
+    { "name": "New task", "short_name": "Task", "url": "./index.html?new=task#/tasks" },
+    { "name": "Journal", "short_name": "Journal", "url": "./index.html#/journal" },
+    { "name": "Ask Chief of Staff", "short_name": "Ask", "url": "./index.html?ask=1#/mission" }
+  ],
+  "share_target": {
+    "action": "./index.html",
+    "method": "GET",
+    "params": { "title": "title", "text": "text", "url": "shared" }
+  }
+}
